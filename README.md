@@ -18,8 +18,8 @@
       padding: 1.5rem;
       text-align: center;
     }
-    header img {
-      max-height: 80px;
+    header svg {
+      max-height: 100px;
       margin-bottom: 0.5rem;
     }
     nav {
@@ -66,7 +66,11 @@
 </head>
 <body>
   <header>
-    <img src="A_logo_design_in_vector_graphic_format_features_th.png" alt="AS Logo" />
+    <!-- Embedded SVG Logo -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+      <rect width="120" height="120" rx="20" fill="#1f2937"/>
+      <text x="50%" y="55%" text-anchor="middle" fill="#3b82f6" font-size="48" font-family="Arial, sans-serif" dy=".3em" font-weight="bold">AS</text>
+    </svg>
     <h1>Artashes Sekhposyan</h1>
     <p>Individual Entrepreneur | Mobile Games & Software Development</p>
   </header>
