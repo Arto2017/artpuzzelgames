@@ -15,25 +15,36 @@
     header {
       background: #111827;
       color: #fff;
-      padding: 2rem;
+      padding: 1.5rem;
       text-align: center;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
+    header img {
+      max-height: 80px;
+      margin-bottom: 0.5rem;
     }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #9ca3af;
+    nav {
+      background: #1f2937;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem;
+    }
+    nav a {
+      color: #f3f4f6;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #3b82f6;
     }
     main {
-      max-width: 700px;
+      max-width: 800px;
       margin: 2rem auto;
       padding: 1rem;
     }
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
     h2 {
       color: #1f2937;
@@ -55,24 +66,46 @@
 </head>
 <body>
   <header>
+    <img src="A_logo_design_in_vector_graphic_format_features_th.png" alt="AS Logo" />
     <h1>Artashes Sekhposyan</h1>
     <p>Individual Entrepreneur | Mobile Games & Software Development</p>
   </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <section>
+    <section id="about">
       <h2>About</h2>
       <p>
-        I am an individual entrepreneur based in Armenia, specializing in mobile game development and custom software solutions. My focus is on creating engaging, user-friendly, and innovative products for international markets.
+        I am an individual entrepreneur based in Armenia, specializing in mobile game development and software solutions. With years of experience in technology and design, I help clients transform their ideas into digital products that are both functional and enjoyable.
+      </p>
+      <p>
+        My mission is to create user-friendly apps and games that inspire creativity, entertainment, and innovation. By combining modern tools with unique concepts, I aim to deliver products that stand out in today’s competitive market.
       </p>
     </section>
 
-    <section class="contact">
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>📱 Mobile Game Development – design and build engaging mobile games for iOS and Android.</li>
+        <li>💻 Software Development – custom software tailored to business needs.</li>
+        <li>🎮 Gamification Solutions – adding game mechanics to apps for higher user engagement.</li>
+        <li>🛠️ Consulting – guiding individuals and companies in digital product development.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:artash.sekhposyan@gmail.com">artash.sekhposyan@gmail.com</a></p>
       <p>Phone: <a href="tel:+37493771273">+374 93 771273</a></p>
       <p>Location: Armenia</p>
     </section>
   </main>
+
   <footer>
     © <span id="year"></span> Artashes Sekhposyan — All Rights Reserved
   </footer>
